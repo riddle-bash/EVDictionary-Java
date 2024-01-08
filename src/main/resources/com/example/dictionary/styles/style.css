@@ -1,0 +1,173 @@
+
+* {
+  -fx-text-fill: #ffffff;
+}
+
+#navbar {
+  -fx-background-color: #080b2c;
+  -fx-border-color: #2a2e4f;
+  -fx-border-style: hidden hidden solid hidden;
+  -fx-border-width: 1;
+}
+
+#searchbar {
+  -fx-background-color: transparent;
+  -fx-border-color: #464863;
+  -fx-border-style: hidden hidden hidden solid;
+  -fx-border-width: 1;
+  -fx-font-size: 20;
+  -fx-padding: 0 0 0 16;
+}
+
+#searchbar:focused {
+  -fx-background-color: #080b2c;
+  -fx-font-size: 20;
+}
+
+#searchbar:focused .content {
+  -fx-background-color: #080b2c;
+  -fx-font-size: 20;
+}
+
+#searchbar:hover {
+  -fx-background-color: #080b2c;
+  -fx-font-size: 20;
+}
+
+#clearButton {
+  -fx-background-color: transparent;
+  -fx-text-fill: #ffffff;
+  -fx-cursor: hand;
+  -fx-font-size: 20;
+}
+
+#clearButton:hover {
+  -fx-text-fill: tomato;
+  -fx-cursor: hand;
+  -fx-font-size: 20;
+}
+
+#listSearch {
+  -fx-background-color: #080b2c;
+  -fx-control-inner-background: transparent;
+  -fx-border-color: transparent;
+  -fx-border-width: 1;
+  -fx-font-size: 24;
+  -fx-cursor: hand;
+}
+
+#listSearch .list-cell:selected {
+  -fx-background-color: #2a2e4f;
+}
+
+#listSearch .list-cell:hover {
+  -fx-background-color: #2a2e4f;
+}
+
+#listSearch:focused {
+  -fx-background-color: #080b2c;
+  -fx-control-inner-background: transparent;
+  -fx-font-size: 24;
+}
+
+#listSearch:hover {
+  -fx-background-color: #080b2c;
+  -fx-control-inner-background: transparent;
+  -fx-font-size: 24;
+}
+
+#resultView {
+  -fx-background-color: #080b2c;
+  -fx-text-box-border: transparent;
+  -fx-background-radius: 0;
+  -fx-border-color: transparent;
+  -fx-border-width: 1;
+  -fx-font-size: 24;
+}
+
+#resultView .content {
+  -fx-background-color: #080b2c;
+  -fx-control-inner-background: transparent;
+  -fx-border-color: transparent;
+  -fx-font-size: 24;
+  -fx-background-radius: 0;
+}
+
+#resultView .content:focused {
+  -fx-background-color: #080b2c;
+  -fx-control-inner-background: transparent;
+  -fx-border-color: transparent;
+  -fx-font-size: 24;
+  -fx-background-radius: 0;
+}
+
+#resultView:focused {
+  -fx-background-color: #080b2c;
+  -fx-control-inner-background: transparent;
+  -fx-border-color: transparent;
+  -fx-font-size: 24;
+  -fx-background-radius: 0;
+}
+
+#optionbar > Button, #aboutUs {
+  -fx-background-color: transparent;
+  -fx-font-size: 14;
+  -fx-cursor: hand;
+}
+
+#optionbar > Button:hover, #aboutUs:hover {
+  -fx-background-color: #2a2e4f;
+  -fx-font-size: 14;
+  -fx-cursor: hand;
+}
+
+#deleteButton {
+  -fx-background-color: transparent;
+  -fx-font-size: 14;
+  -fx-cursor: hand;
+}
+
+#ttsButton {
+  -fx-background-color: transparent;
+  -fx-font-size: 14;
+  -fx-cursor: hand;
+}
+
+/*Scroll bar*/
+/* The main scrollbar **track** CSS class  */
+#listSearch .scroll-bar:horizontal .track,
+#listSearch .scroll-bar:vertical .track {
+  -fx-background-color: #080b2c;
+  -fx-border-color: #2a2e4f;
+  -fx-background-radius: 0em;
+  -fx-border-radius: 2em;
+}
+
+/* The increment and decrement button CSS class of scrollbar */
+#listSearch .scroll-bar:horizontal .increment-button,
+#listSearch .scroll-bar:horizontal .decrement-button {
+  -fx-background-color: transparent;
+  -fx-background-radius: 0em;
+  -fx-padding: 0 0 10 0;
+}
+
+/* The increment and decrement button CSS class of scrollbar */
+#listSearch .scroll-bar:vertical .increment-button,
+#listSearch .scroll-bar:vertical .decrement-button {
+  -fx-background-color: transparent;
+  -fx-background-radius: 0em;
+  -fx-padding: 0 10 0 0;
+}
+
+#listSearch .scroll-bar .increment-arrow,
+#listSearch .scroll-bar .decrement-arrow {
+  -fx-shape: " ";
+  -fx-padding: 0;
+}
+
+/* The main scrollbar **thumb** CSS class which we drag every time (movable) */
+#listSearch .scroll-bar:horizontal .thumb,
+#listSearch .scroll-bar:vertical .thumb {
+  -fx-background-color: derive(#2a2e4f, 90%);
+  -fx-background-insets: 2, 0, 0;
+}

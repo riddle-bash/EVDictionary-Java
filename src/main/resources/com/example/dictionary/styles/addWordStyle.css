@@ -1,0 +1,153 @@
+* {
+  -fx-text-fill: #ffffff;
+  -fx-background-color: #080b2c;
+}
+
+#navbar {
+  -fx-background-color: #080b2c;
+  -fx-border-color: #2a2e4f;
+  -fx-border-style: hidden hidden solid hidden;
+  -fx-border-width: 1;
+}
+
+#optionbar > Button, #aboutUs {
+  -fx-background-color: transparent;
+  -fx-font-size: 14;
+  -fx-cursor: hand;
+}
+
+#optionbar > Button:hover, #aboutUs:hover {
+  -fx-background-color: #2a2e4f;
+  -fx-font-size: 14;
+  -fx-cursor: hand;
+}
+
+#addform {
+  -fx-background-color: #080b2c;
+  -fx-control-inner-background: transparent;
+  -fx-border-color: #ffffff;
+  -fx-border-style: solid hidden hidden hidden;
+  -fx-border-width: 1;
+  -fx-font-size: 16;
+}
+
+#addform > #inputWordMeaning .tool-bar {
+  -fx-border-width: 1;
+  -fx-border-color: #ffffff;
+  -fx-cursor: hand;
+}
+
+#addform > .combo-box {
+  -fx-border-color: #ffffff;
+  -fx-control-inner-background: transparent;
+  -fx-background-color: transparent;
+  -fx-font-size: 15;
+}
+
+#addform > .text-field {
+  -fx-border-color: #ffffff;
+  -fx-control-inner-background: transparent;
+  -fx-background-color: transparent;
+  -fx-font-size: 15;
+}
+
+#addform > .text-area {
+  -fx-background-color: transparent;
+  -fx-border-color: #ffffff;
+  -fx-border-width: 1;
+}
+
+#addform > .text-area .content {
+  -fx-background-color: #080b2c;
+  -fx-border-color: none;
+  -fx-font-size: 15;
+  -fx-background-radius: 0;
+}
+
+#addform > .text-area:focused {
+  -fx-background-color: transparent;
+  -fx-font-size: 16;
+  -fx-background-radius: 0;
+}
+
+#previewButton {
+  -fx-border-color: #ffffff;
+  -fx-border-width: 1;
+  -fx-cursor: hand;
+}
+
+#previewButton:hover {
+  -fx-background-color: #2a2e4f;
+  -fx-border-color: transparent;
+  -fx-border-width: 1;
+  -fx-cursor: hand;
+}
+
+#saveButton {
+  -fx-text-fill: lightgreen;
+  -fx-border-color: #ffffff;
+  -fx-border-width: 1;
+  -fx-font-size: 14;
+  -fx-cursor: hand;
+}
+
+#saveButton:hover {
+  -fx-background-color: lightgreen;
+  -fx-text-fill: #ffffff;
+  -fx-border-color: transparent;
+  -fx-font-size: 14;
+  -fx-cursor: hand;
+}
+
+#resetButton {
+  -fx-text-fill: tomato;
+  -fx-border-color: #ffffff;
+  -fx-border-width: 1;
+  -fx-font-size: 14;
+  -fx-cursor: hand;
+}
+
+#resetButton:hover {
+  -fx-background-color: tomato;
+  -fx-border-color: transparent;
+  -fx-text-fill: #ffffff;
+  -fx-font-size: 14;
+  -fx-cursor: hand;
+}
+
+#previewform {
+  -fx-background-color: #080b2c;
+  -fx-control-inner-background: transparent;
+  -fx-border-color: #ffffff;
+  -fx-border-style: solid hidden hidden hidden;
+  -fx-border-width: 1;
+  -fx-font-size: 16;
+}
+
+ .scroll-bar:horizontal .increment-button,
+ .scroll-bar:horizontal .decrement-button {
+  -fx-background-color: transparent;
+  -fx-background-radius: 0em;
+  -fx-padding: 0 0 10 0;
+}
+
+/* The increment and decrement button CSS class of scrollbar */
+ .scroll-bar:vertical .increment-button,
+ .scroll-bar:vertical .decrement-button {
+  -fx-background-color: transparent;
+  -fx-background-radius: 0em;
+  -fx-padding: 0 10 0 0;
+}
+
+ .scroll-bar .increment-arrow,
+ .scroll-bar .decrement-arrow {
+  -fx-shape: " ";
+  -fx-padding: 0;
+}
+
+/* The main scrollbar **thumb** CSS class which we drag every time (movable) */
+ .scroll-bar:horizontal .thumb,
+ .scroll-bar:vertical .thumb {
+  -fx-background-color: derive(#2a2e4f, 90%);
+  -fx-background-insets: 2, 0, 0;
+}

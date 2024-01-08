@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="720.0" maxWidth="1200.0" minHeight="720.0" minWidth="1200.0" prefHeight="720.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.dictionary.UpdateWordController">
+  <children>
+    <AnchorPane fx:id="navbar" layoutY="-1.0" prefHeight="82.0" prefWidth="1200.0">
+      <children>
+        <ImageView fitHeight="58.0" fitWidth="58.0" layoutX="33.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
+          <image>
+            <Image url="@images/icon512.png" />
+          </image>
+        </ImageView>
+        <HBox fx:id="optionbar" layoutX="678.0" layoutY="7.0" prefHeight="70.0" prefWidth="458.0">
+          <children>
+            <Button fx:id="onlinescene" alignment="CENTER" mnemonicParsing="false" prefHeight="85.0" prefWidth="115.0" text="Dịch online" textAlignment="CENTER" wrapText="true" />
+            <Button fx:id="mainscene" alignment="CENTER" mnemonicParsing="false" prefHeight="85.0" prefWidth="115.0" text="Tra từ" textAlignment="CENTER" wrapText="true" />
+            <Button fx:id="addscene" alignment="CENTER" mnemonicParsing="false" prefHeight="85.0" prefWidth="115.0" text="Thêm từ" />
+            <Button fx:id="updatescene" alignment="CENTER" mnemonicParsing="false" prefHeight="85.0" prefWidth="115.0" text="Sửa từ" wrapText="true" />
+          </children>
+        </HBox>
+        <TextField fx:id="searchbar" focusTraversable="false" layoutX="124.0" layoutY="19.0" onAction="#onEnter" prefHeight="44.0" prefWidth="481.0" promptText="Nhập từ cần chỉnh sửa ...">
+          <font>
+            <Font size="20.0" />
+          </font>
+        </TextField>
+            <Button fx:id="clearButton" focusTraversable="false" layoutX="578.0" layoutY="19.0" mnemonicParsing="false" onAction="#actionClear" prefHeight="37.0" prefWidth="37.0" text="X" />
+      </children>
+    </AnchorPane>
+    <AnchorPane layoutY="82.0" prefHeight="637.0" prefWidth="1200.0" style="-fx-background-color: #080b2c;">
+      <children>
+        <AnchorPane fx:id="addform" layoutX="130.0" prefHeight="637.0" prefWidth="470.0">
+          <children>
+            <TextField fx:id="inputWordName" editable="false" layoutX="2.0" layoutY="323.0" prefHeight="35.0" prefWidth="476.0" />
+            <Label layoutX="2.0" layoutY="295.0" text="Tên từ" />
+            <ComboBox fx:id="inputWordType" editable="true" layoutX="2.0" layoutY="395.0" prefHeight="35.0" prefWidth="476.0" />
+            <Label layoutX="2.0" layoutY="367.0" text="Chọn loại từ" />
+            <TextField fx:id="inputWordPronoun" layoutX="2.0" layoutY="464.0" prefHeight="35.0" prefWidth="476.0" />
+            <Label layoutX="2.0" layoutY="437.0" text="Phát âm" />
+            <Label layoutX="1.0" layoutY="511.0" text="Nghĩa" />
+            <Button fx:id="saveButton" layoutX="1.0" layoutY="586.0" mnemonicParsing="false" onAction="#actionSave" prefHeight="37.0" prefWidth="84.0" text="Sửa từ" />
+            <Button fx:id="previewButton" layoutX="196.0" layoutY="586.0" mnemonicParsing="false" onAction="#actionPreview" text="Xem thử" />
+            <Button fx:id="resetButton" layoutX="394.0" layoutY="586.0" mnemonicParsing="false" onAction="#actionReset" prefHeight="37.0" prefWidth="84.0" text="Làm lại" />
+            <ListView fx:id="listSearch" focusTraversable="false" layoutX="1.0" layoutY="3.0" prefHeight="278.0" prefWidth="476.0" />
+                  <ComboBox fx:id="inputWordMeaning" editable="true" layoutX="2.0" layoutY="539.0" prefHeight="35.0" prefWidth="476.0" promptText="Chọn nghĩa ..." />
+          </children>
+        </AnchorPane>
+        <AnchorPane fx:id="previewform" layoutX="679.0" prefHeight="637.0" prefWidth="458.0">
+          <children>
+            <TextArea fx:id="resultView" editable="false" focusTraversable="false" layoutX="1.0" layoutY="2.0" prefHeight="637.0" prefWidth="458.0" wrapText="true" />
+          </children>
+        </AnchorPane>
+            <Button fx:id="aboutUs" layoutX="14.0" layoutY="597.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" text="?" />
+      </children>
+    </AnchorPane>
+  </children>
+</AnchorPane>

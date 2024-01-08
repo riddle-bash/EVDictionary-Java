@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+
+<AnchorPane maxHeight="720.0" maxWidth="1200.0" minHeight="720.0" minWidth="1200.0" prefHeight="720.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.dictionary.AddWordController">
+  <children>
+    <AnchorPane fx:id="navbar" prefHeight="82.0" prefWidth="1200.0">
+      <children>
+        <ImageView fitHeight="58.0" fitWidth="58.0" layoutX="33.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
+          <image>
+            <Image url="@images/icon512.png" />
+          </image>
+        </ImageView>
+        <HBox fx:id="optionbar" layoutX="678.0" layoutY="7.0" prefHeight="70.0" prefWidth="458.0">
+          <children>
+            <Button fx:id="onlinescene" alignment="CENTER" mnemonicParsing="false" prefHeight="85.0" prefWidth="115.0" text="Dịch online" textAlignment="CENTER" wrapText="true" />
+            <Button fx:id="mainscene" alignment="CENTER" mnemonicParsing="false" prefHeight="85.0" prefWidth="115.0" text="Tra từ" textAlignment="CENTER" wrapText="true" />
+            <Button fx:id="addscene" alignment="CENTER" mnemonicParsing="false" prefHeight="85.0" prefWidth="115.0" text="Thêm từ" textAlignment="CENTER" />
+            <Button fx:id="updatescene" alignment="CENTER" mnemonicParsing="false" prefHeight="85.0" prefWidth="115.0" text="Sửa từ" textAlignment="CENTER" wrapText="true" />
+          </children>
+        </HBox>
+      </children>
+    </AnchorPane>
+    <AnchorPane layoutY="83.0" prefHeight="637.0" prefWidth="1200.0">
+      <children>
+        <AnchorPane fx:id="addform" layoutX="130.0" prefHeight="637.0" prefWidth="470.0">
+          <children>
+            <TextField fx:id="inputWordName" layoutX="1.0" layoutY="46.0" prefHeight="35.0" prefWidth="476.0" />
+            <Label layoutX="1.0" layoutY="14.0" text="Tên từ" />
+            <TextField fx:id="inputWordType" layoutX="2.0" layoutY="129.0" prefHeight="35.0" prefWidth="476.0" />
+            <Label layoutX="1.0" layoutY="98.0" text="Loại từ" />
+            <TextField fx:id="inputWordPronoun" layoutX="2.0" layoutY="213.0" prefHeight="35.0" prefWidth="476.0" />
+            <Label layoutX="1.0" layoutY="181.0" text="Phát âm" />
+            <Label layoutX="1.0" layoutY="259.0" text="Nghĩa" />
+            <Button fx:id="saveButton" layoutX="3.0" layoutY="586.0" mnemonicParsing="false" onAction="#actionSave" prefHeight="37.0" prefWidth="84.0" text="Thêm từ" />
+            <Button fx:id="previewButton" layoutX="197.0" layoutY="586.0" mnemonicParsing="false" onAction="#actionPreview" text="Xem thử" />
+            <Button fx:id="resetButton" layoutX="394.0" layoutY="586.0" mnemonicParsing="false" onAction="#actionReset" prefHeight="37.0" prefWidth="84.0" text="Làm lại" />
+                  <TextField fx:id="inputWordMeaning" alignment="TOP_LEFT" layoutX="3.0" layoutY="291.0" prefHeight="283.0" prefWidth="476.0" />
+          </children>
+        </AnchorPane>
+        <AnchorPane fx:id="previewform" layoutX="679.0" prefHeight="637.0" prefWidth="458.0">
+          <children>
+            <TextArea fx:id="listPreview" editable="false" focusTraversable="false" layoutX="1.0" layoutY="2.0" prefHeight="637.0" prefWidth="458.0" wrapText="true" />
+          </children>
+        </AnchorPane>
+            <Button fx:id="aboutUs" layoutX="14.0" layoutY="597.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" text="?" />
+      </children>
+    </AnchorPane>
+  </children>
+</AnchorPane>
