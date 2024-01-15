@@ -1,4 +1,4 @@
-package com.example.dictionary;
+package com.example.dictionary.appControllers;
 
 import com.example.dictionary.processData.Translator;
 import java.io.IOException;
@@ -17,7 +17,6 @@ import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.TextArea;
-import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;

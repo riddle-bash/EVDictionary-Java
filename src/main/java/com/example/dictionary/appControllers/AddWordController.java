@@ -1,4 +1,4 @@
-package com.example.dictionary;
+package com.example.dictionary.appControllers;
 
 import com.example.dictionary.processData.ManageOnlineData;
 import java.io.IOException;

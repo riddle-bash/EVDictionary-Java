@@ -14,9 +14,9 @@ public class ManageOnlineData {
 
             StringBuilder stringBuilder = new StringBuilder();
             
-            stringBuilder.append("insert into `data` (`word`, `type`, `pronunciation`, `meaning`) values ('");
-            stringBuilder.append(arrayList.get(0) + "', '" + arrayList.get(1) + "', '" + arrayList.get(2));
-            stringBuilder.append("', '" + arrayList.get(3) + "');");
+            stringBuilder.append("insert into `data` (`word`, `type`, `pronunciation`, `meaning`) values (\"");
+            stringBuilder.append(arrayList.get(0) + "\", \"" + arrayList.get(1) + "\", \"" + arrayList.get(2));
+            stringBuilder.append("\", \"" + arrayList.get(3) + "\");");
 
             // TRACK
             System.out.println("Word added succesfully: " + stringBuilder);

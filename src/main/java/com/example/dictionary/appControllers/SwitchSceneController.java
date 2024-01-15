@@ -1,4 +1,4 @@
-package com.example.dictionary;
+package com.example.dictionary.appControllers;
 
 import java.io.IOException;
 import java.util.Objects;

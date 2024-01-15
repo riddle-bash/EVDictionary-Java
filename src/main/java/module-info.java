@@ -7,4 +7,6 @@ module com.example.dictionary {
 
   opens com.example.dictionary to javafx.fxml;
   exports com.example.dictionary;
+  exports com.example.dictionary.appControllers;
+  opens com.example.dictionary.appControllers to javafx.fxml;
 }

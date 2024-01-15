@@ -1,4 +1,4 @@
-package com.example.dictionary;
+package com.example.dictionary.appControllers;
 
 import com.example.dictionary.processData.DBConfigs;
 import com.example.dictionary.processData.LoadOnlineData;
