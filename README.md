@@ -35,3 +35,9 @@ Technology: MySQL, JDBC, FreeTTS, REST
 ![](src/main/resources/com/example/dictionary/images/info24.png) Dịch câu tiếng Anh sang tiếng Việt sử dụng Google Translate API (giới hạn 1024 ký tự)
 
 - Hướng phát triển tiếp theo: Thêm ngôn ngữ dịch, tích hợp cho website, dịch file, dịch ảnh.
+
+## Một số ảnh khác về ứng dụng
+
+![](src/main/resources/com/example/dictionary/images/EVD_Online.png)
+
+![](src/main/resources/com/example/dictionary/images/EVD_Update.png)
