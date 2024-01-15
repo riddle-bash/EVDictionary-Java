@@ -8,6 +8,12 @@ Các thành viên trong nhóm UET K64-K2:
 
 Phiên bản sử dụng: JDK 17
 
+Hướng dẫn
+1. Sau khi giải nén (hoặc _pull_), chọn __File\Project Structure\Modules\Dependencies\\+__
+2. Điều hướng tới __external resource\freetts\lib__ và __external resource\mysql-connector\mysql-connector.jar__
+3. Run
+4. P/S: Nếu IDE không tự nhận JavaFX, chọn __Project Structure\Library\\+\external resource\javafx\lib__ và tại IDE chọn __Run\Run with parameter\Modify option\Add VM Option__, cuối cùng điền _--module-path="PATH" --add-modules=javafx.controls,javafx.fxml_, với _PATH_ là đường dẫn (absolute path) tới _lib_ của JavaFX ở trên.
+
 Framework: SceneBuilder, JavaFX
 
 Technology: MySQL, JDBC, FreeTTS, REST
